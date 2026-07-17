@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abertura de Chamado - UniRitter</title>
+    <link rel="icon" type="image/png" href="favcom.png">
+	<style>
+		/* Reset básico e fontes*/
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		}	
+
+		body{
+			background-color: #f4f4f6;
+			color: #333333;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			min-height: 100vh;
+			padding: 20px;
+		}				
+
+		/* Segmento Main */
+		.box_Card{
+			background-color: #ffffff;
+			border-radius: 12px;
+			box-shadow: 0 10px 30px rgb(0, 0, 0, 0.08);
+			width: 100%;
+			max-width: 420px;
+			padding: 35px 30px;
+			text-align: center;
+			border-top: 6px solid #e31837;
+			margin-bottom: 20px;
+		}
+
+		/*Segmento header*/
+		/* Cabecalho Card */
+		.cabecalho_Card h1{
+			font-size: 1.65rem;
+			color: #1e1e24;
+			font-weight: 700;
+			margin-bottom: 4px;
+		}
+		.cabecalho_Card p{
+			font-size: 0.85rem;
+			color: #e31837;
+			font-weight: 600;
+			text-transform: uppercase;
+			letter-spacing: 0.5px;
+			margin-bottom: 25px;
+		}
+
+		/* Segmento Section */
+		/* Texto Card */
+		.texto_Card{
+			margin-bottom: 20px;
+		}
+		.texto_Instrucoes_1{
+			font-size: 0.95rem;
+			color: #555555;
+			line-height: 1.5;
+		}
+
+		/* Segmento Article */
+		/*  QR CODE Card */
+		.qrcode_Card{
+			background-color: #fafafa;
+			border: 2px dashed #d1d1d6;
+			border-radius: 8px;
+			padding: 16px;
+			margin-bottom: 25px;
+			display: inline-block;
+		}
+		.qrCode_Chamado_Imagem{
+			max-width: 200px;
+			width: 100%;
+			height: auto;
+			display: block;
+			margin: 0 auto;
+		}
+		/* Botao Card */
+		.botao_Card{
+			width: 100%;
+		}
+		/* Texto Card */
+		.texto_Instrucoes_2{			
+			font-size: 0.95rem;
+			color: #555555;
+			line-height: 1.5;
+			margin-top: -15px;	
+			margin-bottom: 12px;		
+		}
+		/* Link do Botao */
+		.action-button{
+			display: block;
+			background-color: #e31837;
+			color: #ffffff;
+			text-decoration: none;
+			padding: 14px 20px;
+			font-weight: 600;
+			border-radius: 6px;
+			font-size: 0.95rem;
+			transition: background-color 0.2s ease, transition 0.1s ease;
+			box-shadow: 0 4px 12px rgba(227, 24, 55, 0.2);
+		}
+		.action-button:hover{
+			background-color: #b51026;
+			transform: translateY(-1px);
+		}
+		.action-button:active{
+			transform: translateY(1px);
+		}
+
+		/* Segmento Footer */
+		.footer_Card{
+			text-align: center;
+		}
+		.footer_Card p{
+			font-size: 0.78rem;
+			color: #888888;
+			font-weight: 500;
+		}
+	</style>
+</head>
+<body>
+	 <main class="box_Card">
+ 	 	<header class="cabecalho_Card">
+			<h1>Abertura de Chamado</h1>
+			<p>Painel de Suporte Técnico Integrado</p>
+		</header>
+
+		<section class="texto_Card">
+			<p class="texto_Instrucoes_1">
+		  		Acesse o Service Desk pelo QR Code abaixo.
+		  	</p> 		  	
+		</section>
+
+		<section class="conteudo_Card">
+			<article class="qrcode_Card">
+						<img src="qrCode_Chamado.png" alt="QR_CODE_CHAMADO_UNIRITTER" class="qrCode_Chamado_Imagem">
+			</article>
+
+			<article class="botao_Card">
+						<p class="texto_Instrucoes_2">
+		  					Ou pelo botão abaixo.
+		  				</p>
+						<a 
+							href="https://portal-animaeducacao.sydle.com/anima-it+reportar-incidentes-diversos+65303ec4d225e84bee0fd17b" 
+							target="_blank" 
+							class="action-button" 
+							role="button"
+						>
+								Acesse o Service Desk	
+						</a>
+			</article>
+		</section>
+	</main>	
+	<footer class="footer_Card">
+		      <p>&copy; NSI - Núcleo de Suporte à Informática | UniRitter FAPA</p>
+	</footer>
+</body>
+</html>
